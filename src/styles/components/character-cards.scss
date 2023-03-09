@@ -1,0 +1,20 @@
+.character {
+  margin-bottom: 1.5rem;
+  a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+  }
+  .card {
+    overflow: hidden;
+    .card-image {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .card-body {
+      background-color: $overlay;
+    }
+  }
+}

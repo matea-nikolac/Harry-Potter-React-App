@@ -3,14 +3,8 @@ import { useEffect } from 'react'
 
 const Home = () => {
 
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios.get('')
-    }
-  })
-
   return (
-    <main className="home">
+    <main>
       <h1>Harry Potter</h1>
     </main>
   )

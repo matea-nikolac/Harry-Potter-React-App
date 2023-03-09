@@ -1,12 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './components/Home'
 import Characters from './components/Characters'
+import Home from './components/Home'
 import Movies from './components/Movies'
 import PageNavbar from './common/PageNavbar'
 import PageNotFound from './common/PageNotFound'
-
-
 
 const App = () => {
 

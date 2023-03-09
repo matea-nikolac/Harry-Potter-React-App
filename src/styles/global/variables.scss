@@ -1,0 +1,10 @@
+$primary: rgba(0, 0, 0, 0.5);
+$bg: white;
+$overlay: #fdeed7;
+$button: #c58d39;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

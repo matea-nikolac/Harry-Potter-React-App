@@ -1,0 +1,12 @@
+.home {
+  @extend %flex-center;
+  // background-image: url(../../images/hogwarts.jpg);
+  // height: 100vh;
+  // background-position: center;
+  .hero {
+    text-align: center;
+    padding: 20px;
+    background-color: $overlay;
+    border-radius: 8px;
+  }
+}

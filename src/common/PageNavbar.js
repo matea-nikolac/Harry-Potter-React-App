@@ -1,3 +1,5 @@
+// Images
+import logo from '../images/logo.png'
 
 // React Router Dom Elements
 import { Link } from 'react-router-dom'
@@ -11,6 +13,9 @@ const PageNavbar = () => {
   return (
     <Navbar expand="md">
       <Container>
+        <Navbar.Brand to="/" as={Link}>
+          <img src={logo} alt="logo" className='logo'/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="site-navigation" />
         <Navbar.Collapse id="site-navigation" className='justify-content-end'>
           <Nav>

@@ -6,35 +6,33 @@ import { Link, useParams } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Loading from '../common/Loading'
+import Error from '../common/Error'
 
 const MovieSingle = () => {
 
   const { id } = useParams()
   const [movie, setMovie] = useState()
+  const [error, setError] = useState('')
 
 
   useEffect(() => {
     const getData = async () => {
       try {
         const { data: { data } } = await axios.get(`https://api.potterdb.com/v1/movies/${id}`)
-        console.log(data)
         setMovie(data)
       } catch (err) {
-        console.log(err)
+        setError(err.message)
       }
     }
     getData()
   }, [id])
 
-  const date = () => {
-
-  }
-
   return (
     <main className='movie-single'>
       <Container>
         <Row>
-          {movie &&
+          {movie ?
             <>
               <Col xs="12">
                 <h1 className='display-4'>{movie.attributes.title}</h1>
@@ -60,6 +58,10 @@ const MovieSingle = () => {
                 <hr />
                 <Link to="/movies" className='return'>Back to movies</Link>
               </Col>
+            </>
+            :
+            <>
+              {error ? <Error error={error} /> : <Loading />}
             </>
           }
         </Row>

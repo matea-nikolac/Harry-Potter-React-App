@@ -7,6 +7,8 @@ import MovieSingle from './components/MovieSingle'
 import CharacterSingle from './components/CharacterSingle'
 import PageNavbar from './common/PageNavbar'
 import PageNotFound from './common/PageNotFound'
+import Error from './common/Error'
+import Loading from './common/Loading'
 
 const App = () => {
 
@@ -20,6 +22,8 @@ const App = () => {
           <Route path="/characters/:id" element={<CharacterSingle />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieSingle />} />
+          <Route path="/error" element={<Error />} />
+          <Route path="/loading" element={<Loading />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

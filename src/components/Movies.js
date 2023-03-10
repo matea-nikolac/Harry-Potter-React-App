@@ -7,10 +7,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Loading from '../common/Loading'
+import Error from '../common/Error'
 
 const Movies = () => {
 
   const [movies, setMovies] = useState([])
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const getData = async () => {
@@ -18,7 +21,7 @@ const Movies = () => {
         const { data: { data } } = await axios.get('https://api.potterdb.com/v1/movies')
         setMovies(data)
       } catch (err) {
-        console.log(err)
+        setError(err.message)
       }
     }
     getData()
@@ -45,7 +48,13 @@ const Movies = () => {
           <Col xs="12">
             <h1 className='display-4 mb-4 text-center'>Movies</h1>
           </Col>
-          {movies.length > 0 && displayMovies()}
+          {movies.length > 0 ?
+            displayMovies()
+            :
+            <>
+              {error ? <Error error={error} /> : <Loading />}
+            </>
+          }
         </Row>
       </Container>
     </main>

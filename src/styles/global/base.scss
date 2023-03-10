@@ -20,9 +20,11 @@ main {
   }
 }
 
-.spinner {
+.loading {
+  display: flex;
+  justify-content: center;
   img {
-    width: 30px;
+    width: 150px;
   }
 }
 

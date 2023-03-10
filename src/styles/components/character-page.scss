@@ -3,19 +3,34 @@
     text-align: center;
     padding: 0;
   }
+
   img {
     height: 550px;
+    min-width: 350px;
   }
+
   .character-image {
     display: flex;
-    justify-content: center;
+    justify-content:center;
   }
+
   .name-div {
     padding: 0;
   }
+
   a {
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     font-size: 18px;
   }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
 }

@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Characters from './components/Characters'
 import Home from './components/Home'
 import Movies from './components/Movies'
+import MovieSingle from './components/MovieSingle'
+import CharacterSingle from './components/CharacterSingle'
 import PageNavbar from './common/PageNavbar'
 import PageNotFound from './common/PageNotFound'
 
@@ -14,8 +16,10 @@ const App = () => {
         <PageNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Characters" element={<Characters />} />
-          <Route path="/Movies" element={<Movies />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/characters/:id" element={<CharacterSingle />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<MovieSingle />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

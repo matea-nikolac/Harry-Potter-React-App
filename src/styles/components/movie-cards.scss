@@ -1,0 +1,31 @@
+.movies {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .movie-image {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .movie-body {
+    background-color: $overlay;
+  }
+  
+  .movie-card {
+    border: none;
+    text-align: center;
+    width: 300px;
+  }
+
+}

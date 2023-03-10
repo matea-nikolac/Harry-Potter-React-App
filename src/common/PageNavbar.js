@@ -11,13 +11,12 @@ const PageNavbar = () => {
   return (
     <Navbar expand="md">
       <Container>
-        <Navbar.Brand to="/" as={Link}>⚡️</Navbar.Brand>
         <Navbar.Toggle aria-controls="site-navigation" />
         <Navbar.Collapse id="site-navigation" className='justify-content-end'>
           <Nav>
             <Nav.Link to="/" as={Link}>Home</Nav.Link>
-            <Nav.Link to="/Characters" as={Link}>Characters</Nav.Link>
-            <Nav.Link to="/Movies" as={Link}>Movies</Nav.Link>
+            <Nav.Link to="/characters" as={Link}>Characters</Nav.Link>
+            <Nav.Link to="/movies" as={Link}>Movies</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

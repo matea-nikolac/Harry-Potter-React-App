@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { useEffect } from 'react'
+import background from '../images/slack-imgs.jpg'
 
 const Home = () => {
 
   return (
-    <main>
-      <h1>Harry Potter</h1>
+    <main className='main-home'>
     </main>
   )
 }

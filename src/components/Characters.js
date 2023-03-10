@@ -10,17 +10,17 @@ import Card from 'react-bootstrap/Card'
 
 const Characters = () => {
 
-  const [ characters, setCharacters ] = useState([])
-  const [ filteredCharacters, setFilteredCharacters ] = useState([])
-  const [ character, setCharacter ] = useState('')
-  const [ houseFilter, setHouseFilter ] = useState('All')
+  const [characters, setCharacters] = useState([])
+  const [filteredCharacters, setFilteredCharacters] = useState([])
+  const [character, setCharacter] = useState('')
+  const [houseFilter, setHouseFilter] = useState('All')
 
   useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get('https://hp-api.onrender.com/api/characters')
-        console.log(data)
         setCharacters(data)
+        console.log(data)
         setFilteredCharacters(data)
       } catch (err) {
         console.log(err)
@@ -34,14 +34,14 @@ const Characters = () => {
       const img = character.image ? character.image : 'https://img.freepik.com/premium-vector/old-wizard-esport-logo-illustration_224764-37.jpg'
       return (
         <Col key={index} lg="4" md="6" sm="12" className='character'>
-          {/* <Link to={`/character/${name}`}> */}
-          <Card>
-            <div className="card-image" style={{ backgroundImage: `url('${img}')` }}></div>
-            <Card.Body>
-              <Card.Text>{character.name}</Card.Text>
-            </Card.Body>
-          </Card>
-          {/* </Link> */}
+          <Link to={`/characters/${character.id}`}>
+            <Card>
+              <div className="card-image" style={{ backgroundImage: `url('${img}')` }}></div>
+              <Card.Body>
+                <Card.Text>{character.name}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
         </Col>
       )
     }
@@ -79,12 +79,17 @@ const Characters = () => {
       <Container>
         <Row>
           <Col xs="12">
-            <h1 className='display-4 mb-4 text-center'>Explore characters</h1>
-            <input type="text" placeholder="Search character..." className='mb-2' onChange={(e) => handleSearch(e.target.value)} />
-            <select name="house" id="house" onChange={(e) => handleHouseFilter(e.target.value)}>
-              <option value='All'>All</option>
-              {getHouses()}
-            </select>
+            <h1 className='display-4 mb-4 text-center'>Characters</h1>
+            <div className='filters'>
+              <input type="text" placeholder="Search character..." className='mb-2' onChange={(e) => handleSearch(e.target.value)} />
+              <div>
+                <label htmlFor="house" className='mr-2'>Filter by house:</label>
+                <select name="house" id="house" className='mb-2 text-center dropdown' onChange={(e) => handleHouseFilter(e.target.value)}>
+                  <option value='All'>All</option>
+                  {getHouses()}
+                </select>
+              </div>
+            </div>
           </Col>
           {characters.length > 0 && displayCharacters()}
         </Row>

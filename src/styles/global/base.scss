@@ -10,16 +10,6 @@ main {
   background-color: $bg;
 }
 
-.btn-brown{
-  background-color: $button;
-  color: #fff;
-  border: none;
-  &:hover, &:active {
-    background-color: darken($button, 8%) !important;
-    color: #fff;
-  }
-}
-
 .loading {
   display: flex;
   justify-content: center;

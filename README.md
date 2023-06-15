@@ -35,6 +35,27 @@ Before commencing the coding process, a wireframe was designed using Excalidraw.
 
 ## Build Process
 
+At the beginning of the project, the router configuration was set up in the App component. The `BrowserRouter` component from React Router was utilized to handle the routing functionality. 
+
+Within the App component, different routes were defined using the Route component, mapping each path to the corresponding component. The routes included a home page, characters page, specific character page, movies page, specific movie page, error page, loading page, and a page not found component to handle unknown routes. This well-structured routing setup ensured smooth navigation and an enhanced user experience.
+
+<img width="677" alt="Screenshot 2023-06-15 at 13 04 06" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/3c79efd7-3384-43e5-8d5f-c1a7648cd035">
+
+After that, the Characters component was created. It fetches character data from a public API and displays it. Users can search for characters, filter them by house, and view detailed information about each character. The component utilizes React, axios for API requests, and Bootstrap for styling. It provides an engaging user experience for exploring and discovering Harry Potter characters.
+
+<img width="766" alt="Screenshot 2023-06-15 at 17 27 33" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/0107d829-586e-4a52-bb48-15f126e54af2">
+
+To create the Characters page, character data was fetched from an external API using the useEffect hook. The getData function was called during component rendering to retrieve and update the `characters` and `filteredCharacters` states. This allowed for seamless access to the character data within the component.
+
+<img width="777" alt="Screenshot 2023-06-15 at 17 47 09" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/531108a0-2e8e-4aa0-93a6-2913b0837f0b">
+
+The `displayCharacters` function generates a visual representation of the characters by mapping over the `filteredCharacters` array. It dynamically assigns avatar images to each character based on their name. Each character is displayed as a card with their name, image, and a link to their specific character page. 
+
+<img width="1272" alt="Screenshot 2023-06-15 at 17 50 09" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/bc36caba-b1cf-49cf-bd71-1a5d87f5491f">
+
+The `filterCharacters` function is responsible for dynamically filtering the characters based on user input. It uses a regular expression to match the search term with each character's name. Additionally, it checks if the selected house filter matches the character's house or if the filter is set to "All". The filtered characters are then updated in the `filteredCharacters` state, resulting in a real-time update of the displayed characters based on the user's search and filter selections.
+
+<img width="941" alt="Screenshot 2023-06-15 at 18 16 59" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/f8f45d0f-b000-4e0b-bd11-6df1ca2dac6c">
 
 ## Challenges
 

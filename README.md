@@ -2,7 +2,7 @@
 <img width="1512" alt="Screenshot 2023-06-14 at 19 06 48" src="https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/72b461a0-56be-4dab-afac-51a00ea32d2d">
 
 ## Description
-The objective of this project was to create an app centered around the Harry Potter series, built with React. The app would leverage a public API to showcase details about the movies and characters from the series.
+This was my second project for the General Assembly's Software Engineering Immersive course. The objective of the project was to create an app centered around the Harry Potter series, built with React. The app would leverage a public API to showcase details about the movies and characters from the series.
 
 ## Deployment link
 https://fabulous-alpaca-fcca80.netlify.app/ 

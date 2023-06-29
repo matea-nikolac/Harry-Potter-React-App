@@ -11,7 +11,6 @@ https://fabulous-alpaca-fcca80.netlify.app/
 The project was a pair project and it was completed in a span of two days.
 
 ## Technologies Used
-
 * React
 * JSX
 * Axios
@@ -27,7 +26,6 @@ The project was a pair project and it was completed in a span of two days.
 * The app can have a router - with several "pages"
 
 ## Planning
-
 Before commencing the coding process, a wireframe was designed using Excalidraw. The wireframe encompasses five essential pages:
 
 * Home Page: The homepage features a navigation bar that includes a "Home" link, allowing users to easily navigate back to the home page, as well as providing options to explore the "Characters" or "Movies" pages.
@@ -40,7 +38,6 @@ Before commencing the coding process, a wireframe was designed using Excalidraw.
 
 
 ## Build Process
-
 At the beginning of the project, the router configuration was set up in the App component. The `BrowserRouter` component from React Router was utilized to handle the routing functionality. 
 
 Within the App component, different routes were defined using the Route component, mapping each path to the corresponding component. The routes included a home page, characters page, specific character page, movies page, specific movie page, error page, loading page, and a page not found component to handle unknown routes. This well-structured routing setup ensured smooth navigation and an enhanced user experience.
@@ -95,11 +92,9 @@ Another intriguing challenge involved implementing seamless interaction between 
 
 
 ## Wins
-
 A significant 'Win' in pair coding the Harry Potter app was the efficient collaboration and knowledge sharing between me and my coding partner. By working together, we tackled challenges effectively, leveraging our strengths and arriving at innovative solutions.
 
 ## Key Takeaways
-
 The key takeaways from the Harry Potter app project include:
 
 * Enhanced understanding of working with external APIs and integrating them into applications, leading to improved skills in handling API requests and data manipulation.
@@ -107,11 +102,9 @@ The key takeaways from the Harry Potter app project include:
 * Improved comprehension of the useEffect hook and axios library, deepening knowledge of asynchronous operations and handling API responses effectively.
 
 ## Bugs
-
 The PageNotFound component needs improvement in handling invalid paths. For example, when manipulating the character's ID in the URL, instead of redirecting to the PageNotFound page, it currently displays a blank page. Enhancements are required to provide proper error feedback to users.
 
 ## Future Improvements
-
 Here are some potential areas for future improvements in the Harry Potter app:
 
 * Fix bug to redirect invalid URLs to PageNotFound component instead of blank page.

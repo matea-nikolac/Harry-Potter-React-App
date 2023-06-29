@@ -11,7 +11,13 @@ https://fabulous-alpaca-fcca80.netlify.app/
 The project was a pair project and it was completed in a span of two days.
 
 ## Technologies Used
-CSS, Bootstrap, HTML, JSX, React, Axios
+
+* React
+* JSX
+* Axios
+* CSS
+* Bootstrap
+* HTML
 
 ## Brief
 

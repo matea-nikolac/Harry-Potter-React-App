@@ -21,8 +21,6 @@ The project was a pair project and it was completed in a span of two days.
 ## Brief
 
 #### Requirements
-Here are the technical requirements for the project:
-
 * Consume a public API
 * Have several components
 * The app can have a router - with several "pages"
@@ -83,7 +81,6 @@ It should be noted that the difference in API endpoints is due to the unavailabi
 Three additional components were created: Error for displaying error messages, Loading for showing loading animations, and PageNotFound to handle non-existent pages with a "404 Page not found" message. They enhance user experience by providing feedback and guidance in various scenarios.
 
 ## Challenges
-
 Throughout the project, we encountered several challenges that required problem-solving skills. One significant obstacle was the absence of a comprehensive API, which necessitated the use of distinct endpoints for characters and movies. This integration and coordination added complexity and demanded additional effort to ensure smooth functionality.
 
 We also faced image quality issues stemming from the API, prompting us to manually seek superior alternatives. Although this process was time-consuming, it was vital to uphold the application's professional and visually appealing appearance.
@@ -92,13 +89,10 @@ Another intriguing challenge involved implementing seamless interaction between 
 
 ![Screenshot 2023-06-27 at 18 23 28](https://github.com/matea-nikolac/Harry-Potter-React-App/assets/62067357/90b819fc-5bce-44bd-8e31-1414d4f1c665)
 
-
 ## Wins
 A significant 'Win' in pair coding the Harry Potter app was the efficient collaboration and knowledge sharing between me and my coding partner. By working together, we tackled challenges effectively, leveraging our strengths and arriving at innovative solutions.
 
 ## Key Takeaways
-The key takeaways from the Harry Potter app project include:
-
 * Enhanced understanding of working with external APIs and integrating them into applications, leading to improved skills in handling API requests and data manipulation.
 * Gain of experience in utilizing React, Bootstrap, and SCSS for building web applications, enabling familiarity with their features and capabilities.
 * Improved comprehension of the useEffect hook and axios library, deepening knowledge of asynchronous operations and handling API responses effectively.

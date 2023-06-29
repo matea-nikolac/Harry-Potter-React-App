@@ -21,6 +21,8 @@ The project was a pair project and it was completed in a span of two days.
 ## Brief
 
 #### Requirements
+Here are the technical requirements for the project:
+
 * Consume a public API
 * Have several components
 * The app can have a router - with several "pages"
